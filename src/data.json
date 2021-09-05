@@ -1,26 +1,38 @@
 {
-    "formName": "AccountsHead",
-    "formDesc": "This is test description",
-    "data": [
-        {
-            "fieldname": "AccountHeadName",
-            "fieldplaceholder": "Account Head Name",
-            "fieldlabel":"Account Head Name",
-            "fieldrules":[
-                {"required": true, "message": "This field is required"}
-            ],
-            "fieldtype": "text"
-        },
-        {
-            "fieldname": "AccountType",
-            "fieldplaceholder": "",
-            "fieldlabel":"Account Type",
-            "fieldrules":[],
-            "fieldtype": "select",
-            "options": ["Assets","Liabilities"]
-        },{
-            "fieldname":"txtArea",
-            "fieldtype":"textarea"
-        }
-    ]
+  "formName": "AccountsHead",
+  "formDesc": "This is test description",
+  "data": [
+    {
+      "fieldname": "AccountHeadName",
+      "fieldplaceholder": "Account Head Name",
+      "fieldlabel": "Account Head Name",
+      "fieldrules": [{ "required": true, "message": "This field is required" }],
+      "fieldtype": "text"
+    },
+    {
+      "fieldplaceholder": "",
+      "fieldlabel": "Account Type",
+      "fieldrules": [],
+      "fieldtype": "select",
+      "options": ["Assets", "Liabilities"]
+    },
+    {
+      "fieldname": "txtArea",
+      "fieldlabel": "comment",
+      "fieldtype": "textarea"
+    },
+    {
+      "fieldname": "checkBox",
+      "fieldlabel": "Accept",
+      "fieldtype": "checkbox",
+      "fieldrules": [{ "required": true }]
+    },
+    {
+      "fieldname": "Choose Hobbies",
+      "fieldlabel": "Hobbies",
+      "fieldtype": "multiselect",
+      "fieldrules": [{ "required": true }],
+      "options": ["Sing", "Dance", "Play"]
+    }
+  ]
 }
